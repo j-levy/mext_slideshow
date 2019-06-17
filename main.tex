@@ -1,5 +1,7 @@
 \documentclass[11pt]{beamer}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{luainputenc}
+\usepackage{fontspec}
+
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 \usepackage[english]{babel}
@@ -9,8 +11,10 @@
 \usepackage{graphicx}
 \usetheme{Madrid}
 
+\setmainfont{Meiryo UI}
 \newcommand{\colurl}[2][blue]{\textcolor{#1}{\underline{\url{#2}}\smallskip}}%
 
+%\setmathfont{normal}
 
 \begin{document}
 	\author{Jonathan LEVY}
@@ -23,10 +27,6 @@
 	%\setbeamercovered{transparent}
 	\setbeamertemplate{navigation symbols}{}
 	\setbeamertemplate{caption}[numbered]
-
-
-
-	
 	
 	\include{00-showtime}
 	
@@ -41,9 +41,15 @@
 	\include{06-Tensor-cores}
 	\include{07-Registration-steps}
 	\include{08-B-Splines}
-
+	\include{09-Entropy}
+	\include{10-Ploy}
 	
-	\section{Motivations}
+	\section{Laboratories}
+	\include{30-TITECH}
+	
+	\include{32-Osaka-uni}
+	
+	\include{35-Japanese-slide}
 	
 	
 	

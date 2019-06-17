@@ -1,5 +1,26 @@
 \begin{frame}{Registration steps}
 		% summarize steps
-
-	
+		Minimize a cost function
+		\begin{equation}
+			\mathnormal{C\left(\theta ,\Phi \right)=-C_{similarity}\left(I\left(t_{0}\right), T\left(I\left(t\right) \right)\right) + \lambda C_{smooth}\left(T\right)
+			}
+		\end{equation}
+		
+		%$\mathnormal{I(t_0), I(t), T(I(t))}$ : Fixed image, Floating image, Transformed floating image (respectively)
+		
+		%$\mathnormal{C_{similarity}}$ = quantifies how \emph{similar} two images are with Normalized Mutual Information (NMI)
+		\begin{center}
+			
+			\begin{enumerate}
+				\item Calculate gradient $\mathnormal{\nabla C=\frac{\partial C\left(\theta ,{\phi }_{l}\right)}{\partial {\phi }_{l}}}$
+				\item While $\mathnormal{\left| \left| \nabla C \right| \right| > \varepsilon} :$
+				\begin{enumerate}
+					\item Update control points: $\mathnormal{\phi = phi + \mu \frac{\nabla C}{\left| \left| \nabla C \right| \right|} }$
+					\item Make a tighter net (higher resolution)
+				\end{enumerate}
+			\end{enumerate}
+		\end{center}
+		
+		
+		
 \end{frame}
