@@ -1,11 +1,25 @@
 \begin{frame}{Work proposal}
-	Integrate in existing work:
+	Provide a library for accelerated calculation:
 	
 	\begin{enumerate}
-		\item Accelerate B-Splines calculation using tensor cores
-		\item Accelerate entropy calculation with tensor cores too
+		\item Accelerate entropy (NMI) with tensor cores
+		
+		\item Accelerated B-Splines using tensor cores too
+
 		\item Quantify precision loss
-		\item Allow for precision refining if needed
+
 		\item Send results for rendering (visual output)
 	\end{enumerate}
+
+	\hspace{0.035\textwidth} $\implies$ Generic functions
+	
+	\hspace{0.035\textwidth} $\implies$ Reusable
+	
+	\hrulefill
+	\bigskip
+	
+	Challenges: 
+	
+	\hspace{0.035\textwidth}	Sufficient speedup? Integration in another software? Precision loss?
+	
 \end{frame}
